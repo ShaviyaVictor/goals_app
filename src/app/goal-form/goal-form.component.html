@@ -1,0 +1,34 @@
+<p>goal-form works!</p>
+
+<div class="container-fluid">
+  <h2 class="text-center">Create a New Goal</h2>
+  
+  <hr>
+
+  <form #goalForm='ngForm' action="">
+
+    <div class="form-group">
+      <label for="name">Name:</label>
+      <input type="text" required class="form-control" id="name" name="name">
+      <!--    tetsing to see if we get any data   -->
+      
+
+    </div><br>
+
+    <div class="form-group">
+      <label for="description">Description:</label>
+      <textarea required name="" id="description" cols="30" rows="10" class="form-control"></textarea>     
+    </div> <br>
+
+    <div class="form-group">
+      <label for="complete">Completion Date:</label>
+      <input type="date" id="complete" class="form-control">
+    </div><br>
+
+    <button type="submit" class="btn btn-success">Add Goal</button>
+
+  </form>
+
+  <hr>
+</div>
+

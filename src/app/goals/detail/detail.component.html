@@ -1,0 +1,25 @@
+
+
+<div class="container">
+  <p>detail works!</p>
+
+  <div>
+    <h1>My Goals</h1>
+    <hr>
+
+    <div class="row">
+      <div class="col-md-6">
+        <p>My goal for today is<b>: </b></p>
+        <ul>
+          <li *ngFor = 'let goal of goals'>
+            <b>{{goal.id}}</b> - <b>{{goal.name}}</b>; <br> <i>{{goal.description}}</i>
+          </li><br><br>
+          <button class="btn btn-outline-danger">Toggle Details</button> <button style="float: right; background-color: red;" (click)='goalComplete(true)'>Complete</button> <br><br>
+          <p class='danger' *ngIf = 'goals.length>5'>Your goals are too many!!!</p>
+        </ul>
+      </div>
+    </div>
+
+    
+  </div>
+</div>

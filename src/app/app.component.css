@@ -1,0 +1,6 @@
+div ul li{
+  list-style: none;
+}
+div#trial{
+  display: none;
+}

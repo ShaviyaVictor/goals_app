@@ -1,0 +1,21 @@
+<div id="detail">
+  <p>goals works!</p>
+
+  <div>
+    <h1>My Goals</h1>
+    <hr>
+    <p>My goal for today is<b>: </b></p>
+    <ul>
+      <div *ngFor = 'let goal of goals, let i = index'>
+        <li appStrikethrough>
+          <b>{{goal.id}}</b> - <b>{{goal.name}}</b>; <i>{{goal.description}}</i>
+        </li>
+        
+      </div>
+      <p class='danger' *ngIf = 'goals.length>5'>Your goals are too many!!!</p>
+    </ul>
+
+    
+
+  </div>
+</div>
